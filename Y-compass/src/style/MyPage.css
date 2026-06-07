@@ -1,0 +1,370 @@
+/* ============================================================
+   MY PAGE
+   ============================================================ */
+
+.mypage {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--bottom-nav-h);
+}
+
+/* ---- Avatar section ---- */
+.mypage-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--header-h) + 24px) 20px 24px;
+}
+
+.mypage-avatar-wrap {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.mypage-avatar-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 24px;
+  background: #BFD0E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mypage-avatar-icon {
+  font-size: 52px;
+  color: #3A5E9A;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.mypage-avatar-edit {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #C3C6D1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.mypage-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #121C2C;
+  margin-bottom: 10px;
+}
+
+.mypage-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mypage-chip {
+  padding: 5px 14px;
+  border-radius: 50px;
+  border: 1px solid #C3C6D1;
+  background: #ffffff;
+  font-size: 12px;
+  color: #003466;
+  font-weight: 500;
+}
+
+/* ---- Menu list ---- */
+.mypage-menu {
+  flex: 1;
+  border-top: 1px solid #F0F0F5;
+}
+
+.mypage-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 56px;
+  border-bottom: 1px solid #F0F0F5;
+  cursor: pointer;
+  transition: background 0.1s;
+  width: 100%;
+  text-align: left;
+}
+
+.mypage-menu-item:active { background: #F9F9FF; }
+
+.mypage-menu-item__label {
+  flex: 1;
+  font-size: 15px;
+  color: #121C2C;
+  font-weight: 400;
+}
+
+.mypage-menu-item__label--danger { color: #BA1A1A; }
+
+.mypage-menu-item__arrow {
+  font-size: 18px;
+  color: #9DA3AE;
+  font-weight: 300;
+}
+
+/* ============================================================
+   전공 변경 SUB-PAGE
+   ============================================================ */
+
+.major-change-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.major-change-header {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 8px;
+  border-bottom: 1px solid #F0F0F5;
+}
+
+.major-change-header__back {
+  font-size: 22px;
+  color: #121C2C;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.major-change-header__logo {
+  height: 22px;
+  object-fit: contain;
+}
+
+.major-change-header__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121C2C;
+  margin-left: 4px;
+}
+
+.major-change-body {
+  flex: 1;
+  padding: 24px 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.major-change-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.major-change-field-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #121C2C;
+}
+
+.major-change-input-row {
+  display: flex;
+  align-items: center;
+  border: 1px solid #C3C6D1;
+  border-radius: 14px;
+  background: #ffffff;
+  transition: border-color 0.15s;
+}
+
+.major-change-input-row:focus-within { border-color: #0060AC; }
+
+.major-change-input-row input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #121C2C;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.major-change-input-row input::placeholder { color: #9DA3AE; }
+
+.major-change-search-icon {
+  padding-right: 14px;
+  color: #737781;
+  font-size: 16px;
+}
+
+.major-change-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #C3C6D1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 50;
+  overflow: hidden;
+}
+
+.major-change-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #424750;
+  border-bottom: 1px solid #F0F0F5;
+  cursor: pointer;
+  transition: background 0.1s;
+  width: 100%;
+  text-align: left;
+}
+
+.major-change-dropdown-item:last-child { border-bottom: none; }
+.major-change-dropdown-item:active { background: #F0F3FF; }
+
+.major-change-dropdown-item--selected {
+  color: #0060AC;
+  font-weight: 500;
+}
+
+.major-change-dropdown-check {
+  margin-left: auto;
+  color: #0060AC;
+  font-size: 15px;
+}
+
+.major-change-footer {
+  padding: 24px 20px 0;
+}
+
+.major-change-btn {
+  width: 100%;
+  padding: 17px;
+  border-radius: 50px;
+  background: #C5D0EB;
+  color: #003466;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.15s;
+}
+
+.major-change-btn:hover { background: #B3C0DC; }
+
+.major-change-btn--disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* 현재 전공 요약 */
+.major-change-current {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  background: #F5F7FB;
+  border-radius: 14px;
+  border: 1px solid #E4E7EF;
+}
+
+.major-change-current__label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9DA3AE;
+  flex-shrink: 0;
+}
+
+.major-change-current__value {
+  font-size: 13px;
+  color: #424750;
+  font-weight: 500;
+}
+
+/* 섹션 구분 */
+.major-change-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.major-change-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #003466;
+  letter-spacing: -0.1px;
+}
+
+/* 다전공 유형 칩 */
+.major-change-type-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.major-change-type-chip {
+  padding: 9px 20px;
+  border-radius: 50px;
+  border: 1.5px solid #C3C6D1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #424750;
+  font-weight: 500;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+
+.major-change-type-chip--active {
+  background: #EEF3FB;
+  border-color: #0060AC;
+  color: #003466;
+  font-weight: 700;
+}
+
+/* 제2전공 학과 필드 */
+.major-change-second-field {
+  padding-top: 4px;
+}
+
+/* 단일전공 안내 */
+.major-change-none-note {
+  font-size: 13px;
+  color: #9DA3AE;
+  padding: 4px 2px;
+}
+
+/* 변경 후 미리보기 */
+.major-change-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  background: #EEF3FB;
+  border-radius: 14px;
+  border: 1px solid #C5D0EB;
+}
+
+.major-change-preview__label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #0060AC;
+  flex-shrink: 0;
+}
+
+.major-change-preview__value {
+  font-size: 13px;
+  color: #003466;
+  font-weight: 600;
+}

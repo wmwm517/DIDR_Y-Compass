@@ -1,0 +1,919 @@
+[
+  {
+    "code": "CNT1101",
+    "name": "의류산업과패션",
+    "dept": "의류환경학과",
+    "category": "전공기초",
+    "credits": 3
+  },
+  {
+    "code": "CNT2105",
+    "name": "패턴디자인의기초",
+    "dept": "의류환경학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "CNT2109",
+    "name": "패션마케팅",
+    "dept": "의류환경학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "CNT2114",
+    "name": "의류재료의이해",
+    "dept": "의류환경학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "CNT2120",
+    "name": "의류디자인",
+    "dept": "의류환경학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "CNT2001",
+    "name": "주니어세미나",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 1
+  },
+  {
+    "code": "CNT2002",
+    "name": "UT세미나",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 1
+  },
+  {
+    "code": "CNT2111",
+    "name": "섬유가공과신소재",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT2121",
+    "name": "어패럴패턴캐드",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT2104",
+    "name": "의류제작방법",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT2106",
+    "name": "의류산업유통론",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT2108",
+    "name": "서양의복식문화와역사",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT2112",
+    "name": "평면패턴디자인",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT2122",
+    "name": "의류재료분석및실험",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3136",
+    "name": "유행심리와의류산업",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3117",
+    "name": "패션비지니스시스템",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3105",
+    "name": "입체패턴설계",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3122",
+    "name": "의류소재개발및기획",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3111",
+    "name": "의복과환경",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3118",
+    "name": "패션산업의혁신과창업",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3101",
+    "name": "패션광고및판매촉진",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3126",
+    "name": "테일러링",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3115",
+    "name": "동양의복식문화와역사",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3116",
+    "name": "의류디자인및기획",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3131",
+    "name": "어패럴디자인과기능성",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3124",
+    "name": "어패럴패턴디자인",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3135",
+    "name": "패션소재의표면디자인",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3119",
+    "name": "의류생산종합설계",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3120",
+    "name": "인간과의복행동",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3121",
+    "name": "직물조직과설계",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3128",
+    "name": "의복관리",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3139",
+    "name": "패션상품과국제무역",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3113",
+    "name": "섬유제품품질평가",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3133",
+    "name": "패션색채와의류기획",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3114",
+    "name": "패션브랜드마케팅관리",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3137",
+    "name": "패션산업현장업무",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3140",
+    "name": "지속가능성과의류상품디자인개발",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT3141",
+    "name": "지속가능의류비즈니스",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4111",
+    "name": "럭셔리패션경영",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4113",
+    "name": "의류제품분석",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4115",
+    "name": "의류소비자행동분석",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4117",
+    "name": "의복과감성과학",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4123",
+    "name": "의류상품개발과의류디자인",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4106",
+    "name": "기능성의류소재",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4108",
+    "name": "국제의류마케팅",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4110",
+    "name": "의류상품기획의실제와응용",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4121",
+    "name": "텍스타일산업과지식재산권",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4126",
+    "name": "패션소비문화와소비자주의",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4120",
+    "name": "기능성의류설계",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4114",
+    "name": "의류학현장실습",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4125",
+    "name": "패션기업과CEO연구",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "CNT4127",
+    "name": "직물의염색",
+    "dept": "의류환경학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID1101",
+    "name": "실내건축학개론",
+    "dept": "실내건축학과",
+    "category": "전공기초",
+    "credits": 3
+  },
+  {
+    "code": "HID2102",
+    "name": "실내건축디자인이론",
+    "dept": "실내건축학과",
+    "category": "전공기초",
+    "credits": 3
+  },
+  {
+    "code": "HID2104",
+    "name": "주거공간계획론",
+    "dept": "실내건축학과",
+    "category": "전공기초",
+    "credits": 3
+  },
+  {
+    "code": "HID2113",
+    "name": "실내건축스튜디오(1)",
+    "dept": "실내건축학과",
+    "category": "전공기초",
+    "credits": 3
+  },
+  {
+    "code": "HID1104",
+    "name": "기초설계제도",
+    "dept": "실내건축학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "HID4101",
+    "name": "졸업스튜디오",
+    "dept": "실내건축학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "HID1102",
+    "name": "드로잉과표현기법",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID1103",
+    "name": "공간조형",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID2111",
+    "name": "디지털패브리케이션",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID1105",
+    "name": "BIM&디자인미디어",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID2109",
+    "name": "실내건축디자인양식",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID2114",
+    "name": "실내건축스튜디오(2)",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID2116",
+    "name": "실내건축구조및재료",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3119",
+    "name": "인간공학과디자인",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3110",
+    "name": "실내환경론",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3111",
+    "name": "실내건축스튜디오(3)",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3112",
+    "name": "공간환경심리학",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3113",
+    "name": "공간디자인과문화",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3116",
+    "name": "환경색채학",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3131",
+    "name": "디지털디자인스튜디오",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3132",
+    "name": "AI와실내건축디자인",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3133",
+    "name": "생성AI와생성적디자인",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3121",
+    "name": "건축조명환경",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3122",
+    "name": "친환경실내건축",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3123",
+    "name": "건축과법",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3124",
+    "name": "한국전통공간과건축",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3125",
+    "name": "GIS공간기획",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3127",
+    "name": "실내건축스튜디오(4)",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID3130",
+    "name": "건축음향환경",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4107",
+    "name": "실내환경제어시스템",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4108",
+    "name": "디자인경영",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4112",
+    "name": "환경디자인스튜디오",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4115",
+    "name": "공간마케팅",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4120",
+    "name": "포트폴리오구성",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4121",
+    "name": "창업406:미래주택융합기술이론과현장실습",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4102",
+    "name": "미래공간기획론",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4103",
+    "name": "조명디자인스튜디오",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4110",
+    "name": "현대실내건축",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "HID4119",
+    "name": "공간디스플레이와코디네이션",
+    "dept": "실내건축학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN2102",
+    "name": "관찰과표현",
+    "dept": "통합디자인학과",
+    "category": "전공기초",
+    "credits": 3
+  },
+  {
+    "code": "DSN2103",
+    "name": "통합디자인개론",
+    "dept": "통합디자인학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "DSN3137",
+    "name": "데이터기반통합디자인리서치",
+    "dept": "통합디자인학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "DSN4117",
+    "name": "통합디자인프로젝트",
+    "dept": "통합디자인학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "DSN4122",
+    "name": "디자인엑스1",
+    "dept": "통합디자인학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "DSN4123",
+    "name": "디자인엑스2",
+    "dept": "통합디자인학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "DSN4124",
+    "name": "디자인엑스3",
+    "dept": "통합디자인학과",
+    "category": "전공필수",
+    "credits": 3
+  },
+  {
+    "code": "DSN2120",
+    "name": "디자인재료와조형",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3111",
+    "name": "제품디자인기초",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN2110",
+    "name": "패션일러스트레이션",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3128",
+    "name": "커뮤니케이션디자인기초",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3126",
+    "name": "2D디지털디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN2002",
+    "name": "UT세미나",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 1
+  },
+  {
+    "code": "DSN2106",
+    "name": "빛과색재디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3127",
+    "name": "3D디지털디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN2121",
+    "name": "패션소재와디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3119",
+    "name": "현대디자인사",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3120",
+    "name": "타이포그래피디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3113",
+    "name": "패션디자인과제작기법",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3121",
+    "name": "디자인리서치",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3106",
+    "name": "디자인미학",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3138",
+    "name": "제품디자인스튜디오",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3139",
+    "name": "디지털패션커뮤니케이션",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN2104",
+    "name": "디자인트렌드",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3134",
+    "name": "사용자경험과인터페이스디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4109",
+    "name": "패션디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3124",
+    "name": "광고디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3108",
+    "name": "인포메이션디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3110",
+    "name": "인터랙티브미디어디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3122",
+    "name": "인터랙션디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3123",
+    "name": "제품디자인프로세스",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4106",
+    "name": "브랜드디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4125",
+    "name": "스페큘레이티브디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 2
+  },
+  {
+    "code": "DSN4104",
+    "name": "디지털패션디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN3107",
+    "name": "디자인현장실습",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4116",
+    "name": "시스템씽킹과디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4119",
+    "name": "비주얼머천다이징",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4120",
+    "name": "디자인비즈니스",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4121",
+    "name": "커뮤니케이션디자인",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  },
+  {
+    "code": "DSN4127",
+    "name": "프로페셔널프랙티스",
+    "dept": "통합디자인학과",
+    "category": "전공선택",
+    "credits": 3
+  }
+]

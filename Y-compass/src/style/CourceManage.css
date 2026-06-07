@@ -1,0 +1,522 @@
+/* ============================================================
+   COURSE MANAGEMENT PAGE
+   ============================================================ */
+
+/* Sub-tabs */
+.tab-bar {
+  display: flex;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.tab-bar__item {
+  flex: 1;
+  padding: 14px 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 2.5px solid transparent;
+  transition: all 0.15s;
+}
+
+.tab-bar__item--active {
+  color: var(--primary-dark);
+  border-bottom-color: var(--primary-dark);
+}
+
+/* Search + Filter row */
+.course-search-area {
+  padding: 16px 20px 12px;
+  display: flex;
+  gap: 10px;
+  background: var(--bg);
+  align-items: center;
+}
+
+.course-search-area .search-bar {
+  flex: 1;
+  width: 250px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+  height: 50px;
+  background: var(--primary-faint3);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-darkest);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.filter-btn__count {
+  background: var(--primary-dark);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-btn__icon {
+  display: flex;
+  align-items: center;
+  color: var(--primary-darkest);
+}
+
+/* Department label */
+.course-dept-label {
+  padding: 16px 20px 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.course-dept-label__icon {
+  font-size: 15px;
+  color: var(--primary-dark);
+}
+
+.course-dept-label__text {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-darkest);
+  letter-spacing: 0.24px;
+}
+
+.course-list-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-primary);
+  padding: 0 20px 16px;
+}
+
+/* Course Cards */
+.course-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px 16px;
+}
+
+.course-card {
+  background: var(--card);
+  border: 1px solid #DBE3EB;
+  border-radius: var(--radius);
+  padding: 21px;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: default;
+}
+
+.course-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.course-card__code {
+  font-size: 12px;
+  font-weight: 700;
+  color: #194684;
+  letter-spacing: 0.6px;
+}
+
+.course-card__controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Type badge button */
+.course-card__type-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+}
+
+.type-btn__chevron {
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+
+/* Type badge colors — 전선/교양 clearly distinct */
+.course-card__type-btn--전필 { background: #FFDAD7; color: #930014; }
+.course-card__type-btn--전기 { background: #FFE0B2; color: #E65100; }
+.course-card__type-btn--전선 { background: #DBE3EB; color: #374957; }
+.course-card__type-btn--교양 { background: #D6EFE8; color: #0E5F48; }
+.course-card__type-btn--default { background: #DBE3EB; color: #5D656C; }
+
+/* Delete button */
+.course-card__delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.course-card__delete:hover { background: var(--primary-faint); }
+.course-card__delete--active { background: var(--error-bg); }
+.course-card__delete--active:hover { background: #FFBDB8; }
+
+.course-card__delete-hint {
+  font-size: 11px;
+  color: var(--error);
+  text-align: right;
+  margin-top: -6px;
+}
+
+.course-card__name {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+  padding-bottom: 4px;
+}
+
+.course-card__meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-light);
+  padding-top: 13px;
+}
+
+.course-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.course-card__meta-icon { font-size: 12px; }
+
+.course-card__status {
+  font-size: 12px;
+  color: rgba(67, 71, 80, 0.5);
+}
+
+/* Credits summary bar — inside card-list, safe from FAB */
+.course-credits-bar {
+  padding: 12px 16px;
+  background: var(--primary-faint2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-top: 4px;
+}
+
+.course-credits-bar__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.course-credits-bar__value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+/* FAB */
+.course-fab {
+  position: fixed;
+  bottom: calc(var(--bottom-nav-h) + 16px);
+  right: calc(50% - 390px/2 + 16px);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--primary-dark);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,52,102,0.3);
+  cursor: pointer;
+  z-index: 89;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.course-fab:hover { background: var(--primary-darkest); transform: scale(1.05); }
+
+/* Add course panel */
+.course-search-panel {
+  position: fixed;
+  bottom: var(--bottom-nav-h);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 390px;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: 20px 16px;
+  box-shadow: 0 -8px 32px rgba(0,34,68,0.16);
+  z-index: 90;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.course-search-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.course-search-panel__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.course-search-result {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.course-search-result:last-child { border-bottom: none; }
+.course-search-result__info { min-width: 0; flex: 1; }
+
+.course-search-result__code {
+  font-size: 12px;
+  color: var(--primary-mid);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.course-search-result__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.course-search-result__meta {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.add-btn {
+  padding: 7px 16px;
+  background: var(--primary-dark);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.add-btn:hover { background: var(--primary-darkest); }
+
+/* Semester selector inside add-course panel */
+.add-semester-section {
+  margin-bottom: 14px;
+}
+
+.add-semester-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.add-semester-chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: none;
+}
+
+.add-semester-chips::-webkit-scrollbar { display: none; }
+
+.add-semester-chip {
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1.5px solid var(--border);
+  background: #ffffff;
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+
+.add-semester-chip--active {
+  background: var(--primary-faint2);
+  border-color: var(--primary-dark);
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+/* Type dropdown */
+.type-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 50;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border: 1px solid var(--border);
+  min-width: 80px;
+  overflow: hidden;
+}
+
+.type-dropdown__item {
+  display: block;
+  width: 100%;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.type-dropdown__item:last-child { border-bottom: none; }
+
+.type-dropdown__item--전필 { color: #930014; }
+.type-dropdown__item--전기 { color: #E65100; }
+.type-dropdown__item--전선 { color: #374957; }
+.type-dropdown__item--교양 { color: #0E5F48; }
+.type-dropdown__item:hover { background: var(--bg); }
+
+/* ============================================================
+   FILTER MODAL
+   ============================================================ */
+.filter-modal {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 390px;
+  background: white;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: 20px 20px 32px;
+  z-index: 100;
+  box-shadow: 0 -8px 32px rgba(0,34,68,0.16);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.filter-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-modal__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.filter-modal__close {
+  font-size: 18px;
+  color: var(--text-muted);
+  padding: 4px;
+}
+
+.filter-modal__section {
+  margin-bottom: 20px;
+}
+
+.filter-modal__section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+.filter-modal__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-chip {
+  padding: 7px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: white;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-chip--active {
+  border-color: var(--primary-dark);
+  background: var(--primary-faint);
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.filter-modal__footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.filter-modal__reset {
+  flex: 1;
+  padding: 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.filter-modal__apply {
+  flex: 2;
+  padding: 14px;
+  border-radius: var(--radius-full);
+  background: var(--primary-dark);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.filter-modal__apply:hover { background: var(--primary-darkest); }

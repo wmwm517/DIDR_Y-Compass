@@ -1,0 +1,89 @@
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+/* ---- Step 1: symbol centered, pops in ---- */
+.intro-screen__symbol {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  animation: intro-pop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* ---- Step 2: symbol slides sideways, logotype fades in ---- */
+.intro-screen__logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.intro-screen__sym-slide {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  animation: sym-slide 0.55s cubic-bezier(0.34, 1.2, 0.64, 1) both;
+}
+
+.intro-screen__logotype {
+  height: 34px;
+  object-fit: contain;
+  animation: logotype-in 0.4s ease 0.18s both;
+}
+
+/* ---- Step 3: tagline above logo group ---- */
+.intro-screen__step3 {
+  display: flex;
+  position: absolute;
+  top: calc(50% - 56px - 7px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.intro-screen__tagline {
+  font-size: 13px;
+  color: #6E7891;
+  letter-spacing: -0.1px;
+  font-weight: 400;
+  margin: 0;
+  animation: intro-fade 0.45s ease both;
+}
+
+/* static variants for step 3 (no re-slide) */
+.intro-screen__sym-static {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.intro-screen__logotype--static {
+  animation: none;
+}
+
+/* ---- Keyframes ---- */
+@keyframes intro-pop {
+  from { transform: scale(0.6); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes sym-slide {
+  from { transform: translateX(72px); opacity: 0.3; }
+  to   { transform: translateX(0);    opacity: 1;   }
+}
+
+@keyframes logotype-in {
+  from { opacity: 0; transform: translateX(10px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+
+@keyframes intro-fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}

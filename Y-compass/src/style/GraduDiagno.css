@@ -1,0 +1,338 @@
+/* ============================================================
+   GRADUATION DIAGNOSIS PAGE
+   ============================================================ */
+
+.diag-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 24px;
+}
+
+/* Summary card */
+.diag-summary-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 21px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.diag-summary-card::after {
+  content: '';
+  position: absolute;
+  top: -64px;
+  right: -64px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: var(--primary-faint3);
+  opacity: 0.1;
+}
+
+.diag-rate-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+.diag-rate-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.diag-rate {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  letter-spacing: -0.5px;
+}
+
+.diag-rate-missing {
+  font-size: 14px;
+  color: var(--error);
+  font-weight: 400;
+}
+
+.diag-stat-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-top: 12px;
+}
+
+.diag-stat-box {
+  background: var(--primary-faint2);
+  border-radius: var(--radius);
+  padding: 12px;
+}
+
+.diag-stat-box--accent {
+  border-left: 4px solid var(--primary-mid);
+}
+
+.diag-stat-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+.diag-stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  letter-spacing: -0.3px;
+}
+
+.diag-stat-value--accent {
+  color: var(--primary-mid);
+  font-weight: 500;
+}
+
+/* Major section heading */
+.diag-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.diag-section-heading__icon {
+  font-size: 20px;
+}
+
+.diag-section-heading__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  letter-spacing: -0.3px;
+}
+
+.diag-section-heading__title--secondary {
+  color: var(--primary-mid);
+  font-weight: 500;
+}
+
+/* Diagnosis table */
+.diag-table-wrapper {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  padding: 2px;
+}
+
+.diag-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.diag-table thead tr {
+  background: var(--primary-faint2);
+}
+
+.diag-table th {
+  padding: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-secondary);
+  letter-spacing: 0.6px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.diag-table th:first-child {
+  text-align: left;
+  padding-left: 12px;
+}
+
+.diag-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.diag-table td:first-child {
+  text-align: left;
+  padding-left: 12px;
+  font-weight: 500;
+}
+
+.diag-table tr:last-child td { border-bottom: none; }
+
+.diag-table .total-row-dark {
+  background: #1A4B84;
+}
+
+.diag-table .total-row-dark td {
+  color: #93BCFC;
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.diag-table .total-row-light {
+  background: var(--primary-light);
+}
+
+.diag-table .total-row-light td {
+  color: #003E73;
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.diag-table .missing-cell {
+  background: var(--error-bg);
+  color: var(--error-dark);
+  font-weight: 700;
+}
+
+/* Liberal arts section */
+.diag-liberal-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.diag-liberal-card__header {
+  background: var(--primary-faint2);
+  border-bottom: 1px solid var(--border);
+  padding: 16px;
+}
+
+.diag-liberal-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* 교양기초 grid */
+.liberal-basic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 16px;
+}
+
+.liberal-basic-item {
+  background: var(--primary-faint2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+}
+
+.liberal-basic-item--missing {
+  background: rgba(255, 218, 214, 0.2);
+  border-color: rgba(186, 26, 26, 0.3);
+}
+
+.liberal-basic-item__name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.liberal-basic-item--missing .liberal-basic-item__name {
+  color: var(--error);
+  font-weight: 500;
+}
+
+.liberal-basic-item__check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.liberal-basic-item__check--ok {
+  background: var(--primary-faint3);
+  color: var(--primary-dark);
+}
+
+.liberal-basic-item__check--no {
+  background: var(--error-bg);
+  color: var(--error);
+}
+
+/* 대학교양 table */
+.diag-general-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.diag-general-table td {
+  padding: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.diag-general-table td:last-child {
+  text-align: right;
+  font-weight: 500;
+}
+
+.diag-general-table tr:last-child td { border-bottom: none; }
+
+.diag-general-table .status--ok { color: var(--primary-dark); }
+.diag-general-table .status--pending { color: var(--error); }
+.diag-general-table .status--remaining { color: var(--text-secondary); }
+
+.diag-general-table .row--highlight {
+  background: var(--primary-faint2);
+}
+
+/* Checklist */
+.grad-checklist {
+  background: #1A4B84;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.grad-checklist__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #93BCFC;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.grad-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+.grad-checklist-item__icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.grad-checklist-item__text {
+  font-size: 16px;
+  color: #93BCFC;
+  font-weight: 500;
+}

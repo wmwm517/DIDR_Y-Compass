@@ -1,0 +1,120 @@
+:root {
+  /* Background & Surface */
+  --bg: #F9F9FF;
+  --card: #FFFFFF;
+
+  /* Border */
+  --border: #C3C6D1;
+  --border-light: rgba(195, 198, 210, 0.3);
+
+  /* Primary palette */
+  --primary-darkest: #00234E;
+  --primary-dark: #003466;
+  --primary-mid: #0060AC;
+  --primary-light: #68ABFF;
+  --primary-faint: #E7EEFF;
+  --primary-faint2: #F0F3FF;
+  --primary-faint3: #D9E3F9;
+
+  /* Nav active */
+  --nav-active-bg: #68ABFF;
+  --nav-active-text: #003E73;
+  --nav-inactive-text: #424750;
+
+  /* Text */
+  --text-primary: #121C2C;
+  --text-secondary: #424750;
+  --text-muted: #737781;
+  --text-white: #FFFFFF;
+
+  /* Semantic */
+  --error: #BA1A1A;
+  --error-dark: #93000A;
+  --error-bg: #FFDAD6;
+  --success: #2E7D32;
+  --success-border: rgba(46, 125, 50, 0.2);
+  --success-bg: rgba(46, 125, 50, 0.08);
+  --warning-text: #424750;
+  --warning-bg: #D9E3F9;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Shadow */
+  --shadow-xs: 0px 1px 1px rgba(0,0,0,0.05);
+  --shadow-sm: 0px 1px 2px rgba(0,0,0,0.05);
+  --shadow: 0px 4px 8px rgba(0,0,0,0.08);
+  --shadow-lg: 0px 25px 50px -12px rgba(0,0,0,0.25);
+
+  /* Layout */
+  --header-h: 64px;
+  --bottom-nav-h: 81px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Apple SD Gothic Neo', 'Pretendard', -apple-system, BlinkMacSystemFont,
+    'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background: #E0E4F0;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#root {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  background: var(--bg);
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 0 0 40px rgba(0,0,0,0.15);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
