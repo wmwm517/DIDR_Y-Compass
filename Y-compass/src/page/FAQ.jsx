@@ -1,7 +1,8 @@
 import { useState, useRef } from 'react'
 import '../style/FAQ.css'
 import Header from '../components/Header'
-import { faqItems, inquiries } from '../data/dummyData'
+import faqItems from '../data/faq.json'
+import initialInquiries from '../data/inquiries.json'
 
 const CATEGORIES = ['전체', '수강신청', '졸업요건', '장학금', '기타']
 
@@ -288,7 +289,7 @@ export default function FAQ() {
   const [showWrite, setShowWrite] = useState(false)
   const [showMyInquiries, setShowMyInquiries] = useState(false)
   const [showAllInquiries, setShowAllInquiries] = useState(false)
-  const [allInquiries, setAllInquiries] = useState(inquiries)
+  const [allInquiries, setAllInquiries] = useState(initialInquiries)
   const [selectedInquiry, setSelectedInquiry] = useState(null)
   const [detailFrom, setDetailFrom] = useState(null)
   const nextId = useRef(100)

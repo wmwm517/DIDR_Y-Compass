@@ -1,0 +1,23 @@
+[
+  { "id": 1,  "code": "COG3101", "semester": "2022년 2학기", "grade": "A-", "type": "전필", "major": "연계전공", "status": "completed" },
+  { "id": 2,  "code": "PHI1001", "semester": "2022년 2학기", "grade": "B+", "type": "교양", "major": "교양",     "status": "completed" },
+  { "id": 3,  "code": "DSN2103", "semester": "2023년 1학기", "grade": "A+", "type": "전필", "major": "주전공",   "status": "completed" },
+  { "id": 4,  "code": "DSN3137", "semester": "2023년 1학기", "grade": "A",  "type": "전필", "major": "주전공",   "status": "completed" },
+  { "id": 5,  "code": "PSY2103", "semester": "2023년 1학기", "grade": "B+", "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 6,  "code": "ELL2101", "semester": "2023년 1학기", "grade": "A-", "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 7,  "code": "DSN2106", "semester": "2023년 2학기", "grade": "A",  "type": "전선", "major": "주전공",   "status": "completed" },
+  { "id": 8,  "code": "PHI2256", "semester": "2023년 2학기", "grade": "B+", "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 9,  "code": "STA2105", "semester": "2023년 2학기", "grade": "B",  "type": "교양", "major": "교양",     "status": "completed" },
+  { "id": 10, "code": "BIZ3117", "semester": "2023년 2학기", "grade": "A-", "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 11, "code": "DSN3120", "semester": "2024년 1학기", "grade": "A+", "type": "전필", "major": "주전공",   "status": "completed" },
+  { "id": 12, "code": "DSN3122", "semester": "2024년 1학기", "grade": "A",  "type": "전선", "major": "주전공",   "status": "completed" },
+  { "id": 13, "code": "COG4101", "semester": "2024년 1학기", "grade": "A-", "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 14, "code": "AIC2110", "semester": "2024년 1학기", "grade": "B+", "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 15, "code": "DSN3134", "semester": "2024년 2학기", "grade": "A+", "type": "전선", "major": "주전공",   "status": "completed" },
+  { "id": 16, "code": "DSN3108", "semester": "2024년 2학기", "grade": "A",  "type": "전선", "major": "주전공",   "status": "completed" },
+  { "id": 17, "code": "LIS2403", "semester": "2024년 2학기", "grade": "A",  "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 18, "code": "PSY3111", "semester": "2024년 2학기", "grade": "B+", "type": "전선", "major": "연계전공", "status": "completed" },
+  { "id": 19, "code": "DSN4120", "semester": "2025년 1학기", "grade": "-",  "type": "전선", "major": "주전공",   "status": "inProgress" },
+  { "id": 20, "code": "DSN3121", "semester": "2025년 1학기", "grade": "-",  "type": "전선", "major": "주전공",   "status": "inProgress" },
+  { "id": 21, "code": "AIC2120", "semester": "2025년 1학기", "grade": "-",  "type": "전선", "major": "연계전공", "status": "inProgress" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "통합디자인학과 졸업요람", "subtitle": "2022학년도 입학자 대상 전문", "type": "PDF", "year": 2022, "major": "통합디자인" },
+  { "id": 2, "title": "인지과학 연계전공 요람", "subtitle": "2022학년도 연계전공 요람", "type": "PDF", "year": 2022, "major": "인지과학" },
+  { "id": 3, "title": "연세대 학위수여 규정", "subtitle": "학부 홈페이지 규정집 링크", "type": "EXTERNAL", "year": 2024, "major": "공통" },
+  { "id": 4, "title": "교양 이수 규정 (2022학번)", "subtitle": "교양 필수 과목 이수 지침", "type": "PDF", "year": 2022, "major": "공통" },
+  { "id": 5, "title": "통합디자인학과 졸업요람", "subtitle": "2023학년도 입학자 대상 전문", "type": "PDF", "year": 2023, "major": "통합디자인" },
+  { "id": 6, "title": "인지과학 연계전공 요람", "subtitle": "2023학년도 연계전공 요람", "type": "PDF", "year": 2023, "major": "인지과학" }
+]

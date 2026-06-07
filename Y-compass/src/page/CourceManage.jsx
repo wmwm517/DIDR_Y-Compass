@@ -2,7 +2,7 @@ import { useState, useMemo, useRef } from 'react'
 import '../style/CourceManage.css'
 import Header from '../components/Header'
 import GraduDiagno from './GraduDiagno'
-import { semesters } from '../data/dummyData'
+import semesters from '../data/semesters.json'
 import { useUser } from '../context/UserContext'
 import { buildSearchPool } from '../data/graduationEngine'
 

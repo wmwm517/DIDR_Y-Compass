@@ -64,6 +64,34 @@ function getLinkedReq(majorName) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Enrich raw user courses with name/credits from catalog               */
+/* ------------------------------------------------------------------ */
+
+export function enrichUserCourses(rawCourses) {
+  // 1차: courses.json
+  const catalog = {}
+  coursesData.forEach(c => {
+    catalog[c.code] = { name: c.name, credits: c.credits }
+  })
+
+  // 2차: requirements2.json 전체 _과목목록
+  for (const [key, val] of Object.entries(requirements2Data)) {
+    if (key.endsWith('_과목목록') && Array.isArray(val)) {
+      for (const c of val) {
+        if (c.학정번호 && !catalog[c.학정번호]) {
+          catalog[c.학정번호] = { name: c.교과목명, credits: c.학점 }
+        }
+      }
+    }
+  }
+
+  return rawCourses.map(raw => {
+    const found = catalog[raw.code]
+    return { ...raw, name: found?.name ?? raw.code, credits: found?.credits ?? 3 }
+  })
+}
+
+/* ------------------------------------------------------------------ */
 /* Build course search pool from JSON                                   */
 /* ------------------------------------------------------------------ */
 export function buildSearchPool(major1Dept, multiMajorType, major2, existingCodes) {

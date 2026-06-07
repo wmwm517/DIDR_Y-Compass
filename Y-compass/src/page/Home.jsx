@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../style//Home.css'
 import Header from '../components/Header'
-import { archiveDocs } from '../data/dummyData'
+import archiveDocs from '../data/archive.json'
 import { useUser } from '../context/UserContext'
 import { calcGraduation } from '../data/graduationEngine'
 

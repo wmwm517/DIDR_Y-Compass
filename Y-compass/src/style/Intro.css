@@ -74,8 +74,8 @@
 }
 
 @keyframes sym-slide {
-  from { transform: translateX(72px); opacity: 0.3; }
-  to   { transform: translateX(0);    opacity: 1;   }
+  from { transform: translateX(0); opacity: 1; }
+  to   { transform: translateX(-2px); opacity: 1;   }
 }
 
 @keyframes logotype-in {
