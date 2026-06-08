@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import '../style/GraduDiagno.css'
 import { useUser } from '../context/UserContext'
 import { calcGraduation } from '../data/graduationEngine'
+
+const AREA_TO_TYPE = { '전공기초': '전기', '전공필수': '전필', '전공선택': '전선' }
 
 function ProgressBar({ value, max, height = 12 }) {
   const pct = Math.min(100, Math.round((value / max) * 100))
@@ -18,7 +21,7 @@ function ProgressBar({ value, max, height = 12 }) {
   )
 }
 
-function MajorTable({ label, data, isDark }) {
+function MajorTable({ label, data, isDark, onAreaClick }) {
   const total = {
     required: data.areas.reduce((s, a) => s + a.required, 0),
     earned:   data.areas.reduce((s, a) => s + a.earned,   0),
@@ -46,8 +49,13 @@ function MajorTable({ label, data, isDark }) {
             {data.areas.map((area, i) => (
               <tr key={i}>
                 <td>
-                  <button style={{ fontSize: 11, color: 'var(--primary-mid)', marginRight: 4 }}>↗</button>
-                  {area.name}
+                  <button
+                    className="area-name-btn"
+                    onClick={() => onAreaClick && onAreaClick(area.name)}
+                  >
+                    <span className="area-name-btn__arrow">↗</span>
+                    {area.name}
+                  </button>
                 </td>
                 <td>{area.required}</td>
                 <td>{area.earned}</td>
@@ -67,10 +75,68 @@ function MajorTable({ label, data, isDark }) {
   )
 }
 
+function CoursePopup({ popup, onClose }) {
+  if (!popup) return null
+  return (
+    <>
+      <div className="popup-overlay" onClick={onClose} />
+      <div className="popup-modal">
+        <div className="popup-handle" />
+        <div className="popup-header">
+          <div>
+            <div className="popup-header-dept">{popup.dept}</div>
+            <div className="popup-header-area">{popup.areaName}</div>
+          </div>
+          <button className="popup-close" onClick={onClose}>✕</button>
+        </div>
+        <div className="popup-body">
+          {popup.courseList.length === 0 ? (
+            <div className="popup-empty">이수한 과목이 없습니다.</div>
+          ) : (
+            <table className="popup-table">
+              <thead>
+                <tr>
+                  <th>과목명</th>
+                  <th>학점</th>
+                  <th>학기</th>
+                  <th>성적</th>
+                </tr>
+              </thead>
+              <tbody>
+                {popup.courseList.map((c, i) => (
+                  <tr key={i} className={c.status === 'inProgress' ? 'popup-row--inprogress' : ''}>
+                    <td>{c.name}</td>
+                    <td>{c.credits}</td>
+                    <td>{c.semester}</td>
+                    <td>{c.grade === '-' ? '수강중' : c.grade}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </div>
+    </>
+  )
+}
+
 export default function GraduDiagno() {
   const { profile, courses } = useUser()
   const d = calcGraduation(profile, courses)
   const pct = d.completionRate
+  const [popup, setPopup] = useState(null)
+
+  function handleAreaClick(dept, majorFilters, areaName) {
+    const typeCode = AREA_TO_TYPE[areaName]
+    const courseList = courses.filter(
+      c => majorFilters.includes(c.major) && c.type === typeCode
+    )
+    setPopup({ dept, areaName, courseList })
+  }
+
+  const major2Filters = profile.multiMajorType === '복수전공'
+    ? ['제2전공', '복수전공']
+    : ['연계전공']
 
   return (
     <div className="diag-container">
@@ -95,11 +161,21 @@ export default function GraduDiagno() {
       </div>
 
       {/* Major 1 table */}
-      <MajorTable label="전공" data={d.major1} isDark={true} />
+      <MajorTable
+        label="전공"
+        data={d.major1}
+        isDark={true}
+        onAreaClick={(areaName) => handleAreaClick(d.major1.name, ['제1전공', '주전공'], areaName)}
+      />
 
       {/* Major 2 table */}
       {d.major2 && (
-        <MajorTable label={profile.multiMajorType} data={d.major2} isDark={false} />
+        <MajorTable
+          label={profile.multiMajorType}
+          data={d.major2}
+          isDark={false}
+          onAreaClick={(areaName) => handleAreaClick(d.major2.name, major2Filters, areaName)}
+        />
       )}
 
       {/* Liberal arts */}
@@ -170,6 +246,9 @@ export default function GraduDiagno() {
           </div>
         ))}
       </div>
+
+      {/* Course popup */}
+      <CoursePopup popup={popup} onClose={() => setPopup(null)} />
     </div>
   )
 }

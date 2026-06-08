@@ -308,7 +308,7 @@ function CourseList() {
         <span className="course-dept-label__icon">🎓</span>
         <span className="course-dept-label__text">{majorLabel}</span>
       </div>
-      <div className="course-list-title">졸업 요건 관리</div>
+      <div className="course-list-title">이수 목록 관리</div>
 
       {/* Course cards */}
       {filteredCourses.length > 0 ? (
